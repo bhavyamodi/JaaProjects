@@ -1,0 +1,210 @@
+-- Linear Search
+-- Binary Search
+
+-- Bubble Sort
+-- Insertion Sort
+-- Selection Sort
+-- Merge Sort
+-- Quick Sort
+-- Counting Sort
+-- Radix Sort
+-- Heap Sort 
+
+1. Linked List 
+
+-- Singly Linked List
+
+   - Linked List
+   - Singly Linked List
+   - Insertion in singly Linked List
+       -- Insertion at beginning in singly Linked List
+       -- Insertion at nth position in singly Linked List
+       -- Insertion at end in singly Linked List
+   - Deletion in singly Linked List
+       -- Deletion from beginning in singly linked list
+       -- Deletion from nth position in singly linked list
+       -- Deletion from end in singly linked list
+   - Reverse a linked list without changing links between nodes (Data reverse only)
+   - Reverse a linked list by changing links between nodes
+   - Print reverse of a linked list without actually reversing
+   - Search an element in a linked list
+   - Insertion in a Sorted Linked List 
+   - Delete alternate nodes of a Linked List
+   - Find middle of the linked list 
+   - Reverse a linked list in groups of given size 
+   - Find kth node from end of the linked list 
+   - Append the last n nodes of a linked list to the beginning of the list 
+   - Check whether linked list is palindrome or not 
+   - Fold a Linked List 
+
+-- Doubly Linked List
+
+   - Introduction to Doubly Linked list in Data Structure
+   - Doubly Linked List in 
+   - Insertion in doubly linked list 
+       -- Insertion at beginning in doubly linked list 
+       -- Insertion at end in doubly linked list 
+       -- Insertion at nth node in doubly linked list 
+   - Deletion in doubly linked list  
+       -- Deletion from beginning in doubly linked list 
+       -- Deletion from nth in doubly linked list 
+       -- Deletion from end in doubly linked list 
+
+-- Circular Linked List
+
+   - Introduction to Circular Linked List
+   - Circular Linked List in 
+   - Insertion in Circular Linked List 
+       -- Insertion at the beginning
+       -- Insertion at the end
+       -- Insertion at nth position 
+   - Deletion in Circular Linked List 
+       -- Deletion from beginning in Circular Linked List 
+       -- Deletion from nth position in Circular Linked List 
+       -- Deletion from end in Circular Linked List 
+   - Split a Circular Linked List in two halves 
+   - Count nodes in Circular Linked List 
+   - Sorted Insert In Circular Linked List 
+
+2. Stacks and Queues
+
+-- Stacks
+
+   - Introduction to Stack in Data Structure
+   - Operations on a Stack
+   - Stack: Infix, Prefix and Postfix conversions
+   - Stack Representation
+   - Representation of a Stack as an Array.
+   - Representation of a Stack as a Linked List.
+   - Infix to Postfix Conversion 
+   - Infix to prefix conversion 
+   - Postfix to Prefix Conversion 
+
+-- Queues
+
+   - Queues in Data Structures (Introduction)
+   - Queues Program in C and implementation
+   - Implementation of Queues using Arrays | C Program
+   - Types of Queues in Data Structure
+   - Application of Queue Data Structure
+   - Insertion in Queues Program (Enqueuing)
+   - Deletion (Removal) in Queues Program(Dequeuing)
+   - Reverse a Queue
+   - Queues using Linked Lists 
+   - Implement Queue using Stack 
+   - Implement Queue using two Stacks 
+
+-- Circular Queues
+
+   - Circular queue in Data Structure
+   - Applications of Circular Queues
+   - Circular queue 
+   - Circular queue using Array 
+   - Circular Queue using Linked Lists 
+
+-- Priority Queue
+
+   - Application of Priority Queue
+   - Priority Queue Example
+   - Priority Queue Introduction 
+   - Priority Queue Implementation using Array 
+   - Priority Queue using Linked List 
+   - Priority Queue Insertion and Deletion
+
+3. Trees
+
+-- Binary Trees
+
+   - Binary Tree in Data Structures (Introduction)
+   - Tree Traversals: Inorder Postorder Preorder 
+   - Inorder Postorder PreOrder Traversals Examples
+       -- Inorder Tree Traversal in Binary Tree
+       -- Preorder Tree Traversal in Binary Tree 
+       -- Postorder Tree Traversal in Binary Tree
+   - Tree Traversal without Recursion
+       -- Postorder Preorder Inorder Traversal without recursion
+       -- Inorder Tree Traversal without Recursion 
+       -- Preorder Tree Traversal without Recursion 
+       -- Postorder Tree Traversal without Recursion 
+
+-- Binary Search Trees
+
+   - Binary search tree in Data Structures (Introduction)
+       -- BST: Introduction to Binary Search Tree
+       -- BST: Binary Search Tree Program 
+       -- BST: Search a node in Binary Search Tree 
+       -- BST: Insertion in a Binary Search Tree
+       -- BST: Deletion in a Binary Search Tree 
+
+-- Traversals
+
+   - Traversal in Trees
+   - Tree Traversals: Breadth-First Search (BFS) 
+   - Tree Traversals: Depth First Search (DFS)
+   - Construct a Binary Tree from Postorder and Inorder
+
+-- B – Trees
+
+   - B-Tree
+       -- B-Tree: Introduction
+       -- B-Tree: Insertion 
+       -- B-Tree: Deletion 
+
+-- AVL Trees
+
+   - AVL Trees
+       -- AVL Trees: Introduction
+       -- AVL Tree Insertion
+       -- AVL Tree Deletion 
+       -- Insertion in a Binary Tree (Level Order)
+       -- Searching in Binary Tree 
+       -- Searching in a Binary Search Tree 
+
+-- Complete Programs for Trees
+
+   - Depth First Traversals 
+   - Level Order Traversal 
+   - Construct Tree from given Inorder and Preorder traversals 
+   - Construct Tree from given Postorder and Inorder traversals 
+   - Construct Tree from given Postorder and Preorder traversal 
+   - Find size of the Binary tree 
+   - Find the height of binary tree 
+   - Find maximum in binary tree 
+   - Check whether two tree are identical
+   - Spiral Order traversal of Tree
+   - Level Order Traversal LIne by Line
+   - Hand shaking lemma and some Impotant Tree Properties.
+   - Check If binary tree if Foldable or not.
+   - check whether tree is Symmetric  
+   - Check for Children-Sum in Binary Tree
+   - Sum of all nodes in Binary Tree
+   - Lowest Common Ancestor in Binary Tree.
+
+4. Arrays
+
+-- Introduction to Arrays 
+   - collection of element
+   - can be accessed by an index
+
+-- Introduction to 2-D Arrays 
+-- Sorting of Array 
+-- Array Rotation 
+-- Reverse an array or string
+-- Find pairs in array with given sum 
+-- Sort the array in Waveform 
+-- Majority Element in Array 
+-- Boyer-Moore’s Voting Algorithm 
+-- K-pairs with smallest sum in 2 arrays
+-- Largest Sum Contigous SubArray 
+-- Maximum Average Sub-array of K length 
+-- Size of sub-array with max sum 
+-- Sub-array with given sum
+-- Triplet that sum to a given value 
+-- Segregate 0’s and 1’s in array 
+-- Segregate 0’s 1’s and 2’s in array 
+-- Sort elements in array by frequency 
+-- Finding pythagorean triplets in an array 
+-- Reorder array using given indexes 
+-- Merging two sorted arrays 
+-- Minimum number of Merge Operations to make an Array Palindrome 
+-- Find Zeros to be Flipped so that number of Consecutive 1’s is maximized
