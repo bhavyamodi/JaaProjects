@@ -1,29 +1,31 @@
 //time complexity : O(n)
 
-arr = [1,3,5,8,9,2,6,7,6,8,9]
-N = arr.length
+arr = [1];
+N = arr.length;
 
-console.log(maxSubarraySum(arr,N))
+console.log(maxSubarraySum(arr, N));
 
-function maxSubarraySum(arr, N){
-    var jumps = 0
-    var sizeRemaining = N
-    console.log('sizeRemaining '+sizeRemaining)
+function maxSubarraySum(arr, n) {
+  if (n <= 1) {
+    return 0;
+  }
 
+  let jumps = 1;
+  let currentJumpIndex = arr[0];
+  let farthestIndex = arr[0];
 
-    while(jumps < N){
-        if(arr[jumps] == 0){
-            return -1
-        }
-
-        
-        console.log(jumps)
-        ++jumps
-        sizeRemaining = sizeRemaining - 1 ;
-        console.log('sizeRemaining '+sizeRemaining)
-
+  for (let i = 1; i < n; i++) {
+    if (i > farthestIndex) {
+      return -1;
     }
-    
 
-    return -1
+    if (i > currentJumpIndex) {
+      jumps++;
+      currentJumpIndex = farthestIndex;
+    }
+
+    farthestIndex = Math.max(farthestIndex, i + arr[i]);
+  }
+
+  return jumps;
 }
