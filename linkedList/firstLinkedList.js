@@ -14,6 +14,7 @@ class LinkedList {
   // Insert a node at the end of the linked list
   append(value) {
     const newNode = new Node(value);
+    console.log(this.head)
 
     if (!this.head) {
       this.head = newNode;
@@ -22,6 +23,8 @@ class LinkedList {
       this.tail.next = newNode;
       this.tail = newNode;
     }
+
+    console.log(this)
   }
 
   // Convert the linked list to an array
@@ -49,11 +52,14 @@ class LinkedList {
 
 // Usage:
 const linkedList = new LinkedList();
+
 linkedList.append(1);
 linkedList.append(2);
+// console.log(linkedList)
+
 linkedList.append(3);
 linkedList.append(4);
 
-linkedList.printNextNodeReference();
+// linkedList.printNextNodeReference();
 
-console.log(linkedList.toArray()); // Output: [1, 2, 3]
+// console.log(linkedList.toArray()); // Output: [1, 2, 3]
