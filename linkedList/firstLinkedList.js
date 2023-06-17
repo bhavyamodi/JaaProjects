@@ -62,4 +62,4 @@ linkedList.append(4);
 
 // linkedList.printNextNodeReference();
 
-// console.log(linkedList.toArray()); // Output: [1, 2, 3]
+console.log(linkedList.toArray()); // Output: [1, 2, 3]
