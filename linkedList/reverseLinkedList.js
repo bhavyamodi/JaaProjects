@@ -37,26 +37,42 @@ class LinkedList {
     }
   }
 
-  // Insert a node at a specific position in the linked list
-  insertAtPosition(value, position) {
-    const newNode = new Node(value);
+  // Reverse the linked list by reversing the data values only
+  reverseDataOnly() {
+    let currentNode = this.head;
+    const values = this.toArray();
 
-    if (position < 0 || position > this.getSize()) {
-        console.log("Position out of range");
-    } else if (position == 0) {
-        this.prepend(value);
-    } else if (position == this.getSize()) {
-        this.append(value);
-    } else {
-      let temp = this.head;
-      for (var i = 1; i <= position - 1; i++) {
-        temp = temp.next;
-      }
-      newNode.next = temp.next;
-      temp.next = newNode;
+    currentNode = this.head;
+    while (currentNode) {
+      currentNode.value = values.pop();
+      currentNode = currentNode.next;
     }
   }
 
+  // Reverse the linked list by changing the links between nodes
+  reverseByChangingLinks() {
+    let previousNode = null;
+    let currentNode = this.head;
+
+    while (currentNode) {
+      const nextNode = currentNode.next;
+      currentNode.next = previousNode;
+      previousNode = currentNode;
+      currentNode = nextNode;
+    }
+
+    this.head = previousNode;
+  }
+
+  // Print the linked list in reverse order without actually reversing it
+  printReverse(node = this.head) {
+    if (!node) {
+      return;
+    }
+
+    this.printReverse(node.next);
+    console.log(node.value);
+  }
 
 
   // Get the size or length of the linked list
@@ -82,20 +98,24 @@ class LinkedList {
   }
 }
 
+
 // Usage:
 const linkedList = new LinkedList();
 linkedList.append(1);
 linkedList.append(2);
 linkedList.append(3);
+linkedList.append(4);
 
-// console.log(linkedList.toArray()); // Output: [1, 2, 3]
+console.log(linkedList.toArray()); // Output: [1, 2, 3, 4]
 
-linkedList.prepend(0);
+linkedList.reverseByChangingLinks();
 
-// console.log(linkedList.toArray()); // Output: [0, 1, 2, 3]
+console.log(linkedList.toArray());  // Output: [4, 3, 2, 1]
 
+linkedList.reverseDataOnly();
 
-console.log(linkedList.insertAtPosition(222, 2));
-console.log(linkedList.toArray()); // Output: [0, 1, 3]
+console.log(linkedList.toArray()); // Output: [1, 2, 3, 4]
 
-// console.log(linkedList.search(1)); // Output: Node { value: 1, next: Node { value: 3, next: null } }
+linkedList.printReverse(); // Output: 4, 3, 2, 1
+
+console.log(linkedList.toArray()); // Output: [1, 2, 3, 4] 
