@@ -88,7 +88,7 @@ linkedList.append(1);
 linkedList.append(2);
 linkedList.append(3);
 
-// console.log(linkedList.toArray()); // Output: [1, 2, 3]
+console.log(linkedList); // Output: [1, 2, 3]
 
 linkedList.prepend(0);
 
