@@ -112,10 +112,10 @@ linkedList.reverseByChangingLinks();
 
 console.log(linkedList.toArray());  // Output: [4, 3, 2, 1]
 
-linkedList.reverseDataOnly();
+// linkedList.reverseDataOnly();
 
-console.log(linkedList.toArray()); // Output: [1, 2, 3, 4]
+// console.log(linkedList.toArray()); // Output: [1, 2, 3, 4]
 
-linkedList.printReverse(); // Output: 4, 3, 2, 1
+// linkedList.printReverse(); // Output: 4, 3, 2, 1
 
-console.log(linkedList.toArray()); // Output: [1, 2, 3, 4] 
+// console.log(linkedList.toArray()); // Output: [1, 2, 3, 4] 
