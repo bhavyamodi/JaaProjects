@@ -38,22 +38,49 @@ class LinkedList {
     }
   }
 
+  //Delete a node in linked list by position x
+  deleteNode(head, x) {
+    let currentNode = head;
+    let temp = null;
+    let index = 1;
+    while (currentNode) {
+      if (index == x) {
+        temp = currentNode.previous;
+        if (!temp) {
+          head = currentNode.next; // remove first element
+          return head;
+        }
+        if (!currentNode.next) {
+          temp.next = currentNode.next; // remove last element
+          return head;
+        }
+
+        temp.next = currentNode.next;
+        currentNode.next = temp;
+        return head;
+      }
+      index++;
+      currentNode = currentNode.next;
+    }
+    return head;
+  }
+
   // Reverse the linked list by changing the links between nodes
   reverseByChangingLinks(head) {
     let currentNode = head;
-    let nextNode = null
+    let nextNode = null;
 
     while (currentNode) {
-        nextNode = currentNode.previous;
-        currentNode.previous = currentNode.next;
-        currentNode.next = nextNode;
+      nextNode = currentNode.previous;
+      currentNode.previous = currentNode.next;
+      currentNode.next = nextNode;
 
-        currentNode = currentNode.previous
+      currentNode = currentNode.previous;
     }
-    if(nextNode){
-        head = nextNode.previous
+    if (nextNode) {
+      head = nextNode.previous;
     }
-    return head
+    return head;
   }
 
   // Convert the linked list to an array
@@ -77,6 +104,7 @@ head = linkedList.insertAtLast(head, 5);
 head = linkedList.insertAtFirst(head, 1);
 head = linkedList.insertAtLast(head, 6);
 
-head = linkedList.reverseByChangingLinks(head);
+head = linkedList.deleteNode(head, 1);
+// head = linkedList.reverseByChangingLinks(head);
 
 console.log(linkedList.toArray(head));

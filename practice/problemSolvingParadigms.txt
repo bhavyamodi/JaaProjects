@@ -1,0 +1,77 @@
+1. Brute Force:
+    -- Subset sum problem
+    -- Traveling Salesman Problem (TSP)
+    -- 0/1 Knapsack problem
+    -- Hamiltonian cycle problem
+    -- Sudoku solving
+    -- String permutation
+    -- Maximum subarray sum problem
+    -- Combination sum problem
+    -- N-Queens problem
+    -- Graph coloring problem
+
+2. Divide and Conquer:
+
+    -- Binary search
+    -- Merge sort
+    -- Quick sort
+    -- Closest pair problem
+    -- Counting inversions in an array
+    -- Maximum subarray sum problem
+    -- Matrix multiplication
+    -- Majority element problem
+    -- Median of two sorted arrays
+    -- Finding the peak element in an array
+
+3. Backtracking:
+
+    -- N-Queens problem
+    -- Sudoku solving
+    -- Hamiltonian cycle problem
+    -- Graph coloring problem
+    -- Permutations of a string
+    -- Combination sum problem
+    -- Subset sum problem
+    -- Rat in a maze problem
+    -- Word search problem
+    -- Knight's tour problem
+
+4. Dynamic Programming:
+
+    -- Fibonacci sequence
+    -- Longest increasing subsequence
+    -- Knapsack problem
+    -- Edit distance between strings
+    -- Longest common subsequence
+    -- Matrix chain multiplication
+    -- Subset sum problem
+    -- Coin change problem
+    -- Maximum subarray sum problem
+    -- Binomial coefficient calculation
+
+5. Greedy Algorithms:
+
+    -- Minimum spanning tree (Prim's and Kruskal's algorithms)
+    -- Huffman coding
+    -- Dijkstra's algorithm for single-source shortest path
+    -- Interval scheduling problem
+    -- Activity selection problem
+    -- Fractional knapsack problem
+    -- Coin change problem
+    -- Job sequencing problem
+    -- Primality testing using the Sieve of Eratosthenes
+    -- Egyptian fraction representation
+
+6. Linear Programming:
+
+    -- Linear programming formulation for resource allocation
+    -- Production planning and scheduling
+    -- Network flow problems
+    -- Diet optimization
+    -- Transportation problem
+    -- Assignment problem
+    -- Knapsack problem
+    -- Cutting stock problem
+    -- Capital budgeting problem
+    -- Facility location problem
+

@@ -36,6 +36,8 @@ function merge(arr, lb, mid, ub){
         k++;
     }
 
+    console.log(arr)
+
     while (i < leftArr.length) {
         arr[k] = leftArr[i];
         i++;
