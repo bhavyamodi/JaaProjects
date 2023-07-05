@@ -1,11 +1,26 @@
-let number = 5
-let factorialSum = 1
-console.log(factorial(number, factorialSum))
+let number = 125
+console.log(factorial(number))
+console.log(recursiveFactorial(number))
 
-function factorial(number, factorialSum){
-    factorialSum = factorialSum * number
-    if(number === 1){
-        return factorialSum
+
+//time complexity : O(n)
+//space complexity : O(n)
+
+function recursiveFactorial(number){
+    if(number === 0){
+        return 1
     }
-    return (factorial(number - 1, factorialSum))
+    return (number  * factorial(number - 1))
+}
+
+
+//time complexity : O(n)
+//space complexity : O(1)
+
+function factorial(number){
+    let result = 1
+    for(let i =2 ; i<= number ; i ++){
+        result = result * i
+    }
+    return result
 }
